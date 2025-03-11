@@ -1,0 +1,8 @@
+stages:
+  preprocess:
+    cmd: python3 preprocess.py
+    deps:
+      - data/users.csv
+      - preprocess.py
+    outs:
+      - data/processed_users.csv
